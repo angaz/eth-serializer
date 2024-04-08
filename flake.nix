@@ -79,10 +79,15 @@
 
         devshells.default = {
           packages = with pkgs; [
+            gcc
+            gnumake
+            nodePackages.node-gyp
             nodejs
+            tree-sitter
+
             zon2nix
 
-            zig.master-2024-03-12
+            zig.master-2024-03-28
             zls
           ];
         };

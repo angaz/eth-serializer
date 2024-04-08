@@ -19,6 +19,10 @@
             .url = "https://github.com/angaz/zig-rlp/archive/da44f39e0670783afeecfe49c33a7a84af876f65.tar.gz",
             .hash = "122038dcc6b7cf765674164beb19c0698af8eee71f150ee7e073086ced4d59ec4c2f",
         },
+        .@"tree-sitter" = .{
+            .url = "https://github.com/angaz/tree-sitter/archive/7e195574f604c87ff8b2598070d4305593a7b02c.tar.gz",
+            .hash = "1220a589a4fc6e197824584f36d4e113cad4811bd5b97095fe719b6d945c74575562",
+        },
     },
     .paths = .{
         // This makes *all* files, recursively, included in this package. It is generally

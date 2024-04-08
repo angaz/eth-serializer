@@ -1,0 +1,156 @@
+===========
+Single Type
+===========
+
+uint64
+
+---
+
+(source
+  (type))
+
+=============
+Simple Struct
+=============
+
+{
+  name0: uint64
+  name1: uint32
+}
+
+---
+
+(source
+  (type
+    (struct
+      (identifier)
+      (type)
+      (identifier)
+      (type))))
+
+============
+Simple Array
+============
+
+[ uint64 string ]
+
+---
+
+(source
+  (type
+    (array
+      (type)
+      (type))))
+
+============
+Simple Slice
+============
+
+[32]byte
+
+---
+
+(source
+  (type
+    (slice
+      (number)
+      (type))))
+
+===============
+Simple Function
+===============
+
+ssz()
+
+---
+
+(source
+  (function
+    (identifier)))
+
+====================
+Function with Struct
+====================
+
+ssz({
+  name0: uint64
+  name1: uint32
+})
+
+---
+
+(source
+  (function
+    (identifier)
+    (type
+      (struct
+        (identifier)
+        (type)
+        (identifier)
+        (type)))))
+
+====================
+Struct with Function
+====================
+
+{
+  name0: uint64
+  name1: ssz([ uint32 uint32 ])
+}
+
+---
+
+(source
+  (type
+    (struct
+      (identifier)
+      (type)
+      (identifier)
+      (function
+        (identifier)
+        (type
+          (array
+            (type)
+            (type)))))))
+
+=============================
+Struct with Function One Line
+=============================
+
+{ name0: uint64 name1: ssz([ uint32 uint32 ]) }
+
+---
+
+(source
+  (type
+    (struct
+      (identifier)
+      (type)
+      (identifier)
+      (function
+        (identifier)
+        (type
+          (array
+            (type)
+            (type)))))))
+
+=======================================
+Struct with Function Minimal Whitespace
+=======================================
+
+{name0:uint64 name1:ssz([uint32 uint32])}
+
+---
+
+(source
+  (type
+    (struct
+      (identifier)
+      (type)
+      (identifier)
+      (function
+        (identifier)
+        (type
+          (array
+            (type)
+            (type)))))))
