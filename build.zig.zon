@@ -23,6 +23,10 @@
             .url = "https://github.com/angaz/tree-sitter/archive/7e195574f604c87ff8b2598070d4305593a7b02c.tar.gz",
             .hash = "1220a589a4fc6e197824584f36d4e113cad4811bd5b97095fe719b6d945c74575562",
         },
+        .@"ssz.zig" = .{
+            .url = "https://github.com/angaz/ssz.zig/archive/675360e898a0b7f356a27377396385eaea800cd3.tar.gz",
+            .hash = "1220127337710782ecaea98c01b0b1582aab391524bc470dc021e2be0fc7416a5759",
+        },
     },
     .paths = .{
         // This makes *all* files, recursively, included in this package. It is generally

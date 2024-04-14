@@ -47,6 +47,8 @@ module.exports = grammar({
       'byte',
       'uint32',
       'uint64',
+      'uint128',
+      'uint256',
       'int32',
       'int64',
       'string',

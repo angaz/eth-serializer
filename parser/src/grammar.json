@@ -177,6 +177,14 @@
         },
         {
           "type": "STRING",
+          "value": "uint128"
+        },
+        {
+          "type": "STRING",
+          "value": "uint256"
+        },
+        {
+          "type": "STRING",
           "value": "int32"
         },
         {

@@ -195,6 +195,14 @@
     "named": false
   },
   {
+    "type": "uint128",
+    "named": false
+  },
+  {
+    "type": "uint256",
+    "named": false
+  },
+  {
     "type": "uint32",
     "named": false
   },

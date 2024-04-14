@@ -21,11 +21,18 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize_cli,
     });
     cli.root_module.addImport(
-        "zig-rlp",
+        "rlp",
         b.dependency("zig-rlp", .{
             .target = target_cli,
             .optimize = optimize_cli,
         }).module("rlp"),
+    );
+    cli.root_module.addImport(
+        "ssz",
+        b.dependency("ssz.zig", .{
+            .target = target_cli,
+            .optimize = optimize_cli,
+        }).module("ssz"),
     );
 
     const tree_sitter_dep = b.dependency("tree-sitter", .{
