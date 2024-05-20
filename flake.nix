@@ -58,7 +58,7 @@
             src = gitignoreSource ./.;
 
             nativeBuildInputs = [
-              zig.master-2024-03-12
+              zig.master-2024-05-14
             ];
 
             buildPhase = ''
@@ -87,7 +87,7 @@
 
             zon2nix
 
-            zig.master-2024-03-28
+            zig.master-2024-05-14
             zls
           ];
         };
